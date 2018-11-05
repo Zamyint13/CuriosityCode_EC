@@ -1,21 +1,33 @@
-// Post your CuriosityCode_EC here. 
-size(400, 400);
-noFill();
-strokeWeight(.4);
-ellipse(200, 200, 300, 300);
-ellipse(253, 253, 150, 150);
-ellipse(253, 147, 150, 150);
-ellipse(147, 253, 150, 150);
-ellipse(147, 147, 150, 150);
-ellipse(275, 200, 150, 150);
-ellipse(200, 275, 150, 150);
-ellipse(125, 200, 150, 150);
-ellipse(200, 125, 150, 150);
-ellipse(230, 270, 150, 150);
-ellipse(270, 230, 150, 150);
-ellipse(170, 270, 150, 150);
-ellipse(270, 170, 150, 150);
-ellipse(130, 225, 150, 150);
-ellipse(225, 130, 150, 150);
-ellipse(175, 130, 150, 150);
-ellipse(130, 170, 150, 150);
+void setup() {
+  size(400, 400);
+  noFill();
+  strokeWeight(.5);
+  //Shows cursor position
+  fill(0);
+  textSize(18);
+  text("("+mouseX+","+mouseY+")", mouseX, mouseY);
+}
+void draw() {
+  stroke(random(200));
+  noFill();
+  ellipse(200, 200, 300, 300);
+  ellipse(253, 253, random(150, 200), random(150, 200));
+  ellipse(253, 147, random(150, 200), random(150, 200));
+  ellipse(147, 253, random(150, 200), random(150, 200));
+  ellipse(147, 147, random(150, 200), random(150, 200));
+  ellipse(275, 200, random(150, 200), random(150, 200));
+  ellipse(200, 275, random(150, 200), random(150, 200));
+  ellipse(125, 200, random(150, 200), random(150, 200));
+  ellipse(200, 125, random(150, 200), random(150, 200));
+  ellipse(230, 270, random(150, 200), random(150, 200));
+  ellipse(270, 230, random(150, 200), random(150, 200));
+  ellipse(170, 270, random(150, 200), random(150, 200));
+  ellipse(270, 170, random(150, 200), random(150, 200));
+  ellipse(130, 225, random(150, 200), random(150, 200));
+  ellipse(225, 130, random(150, 200), random(150, 200));
+  ellipse(175, 130, random(150, 200), random(150, 200));
+  ellipse(130, 170, random(150, 200), random(150, 200));
+
+
+  
+}
